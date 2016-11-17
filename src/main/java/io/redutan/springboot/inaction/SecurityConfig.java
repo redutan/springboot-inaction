@@ -1,4 +1,4 @@
-package io.redutan.springboot.inaction.config;
+package io.redutan.springboot.inaction;
 
 import io.redutan.springboot.inaction.reader.ReaderRepository;
 import org.springframework.beans.factory.annotation.Autowired;
