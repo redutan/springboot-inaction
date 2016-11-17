@@ -3,7 +3,6 @@ package io.redutan.springboot.inaction.book;
 import io.redutan.springboot.inaction.AmazonProperties;
 import io.redutan.springboot.inaction.reader.Reader;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -13,7 +12,6 @@ import java.util.List;
 
 @Controller
 @RequestMapping("/")
-@ConfigurationProperties(prefix = "amazon")
 public class ReadingListController {
     private final ReadingListRepository readingListRepository;
     private final AmazonProperties amazonProperties;
